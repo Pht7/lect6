@@ -24,6 +24,9 @@ def get_article_data(keyword):
 
     def get_snippet(article):
         return article['snippet']
+        
+    def get_url(article):
+        return article['web_url']
 
     headlines = map(get_headline, articles)
     snippets = map(get_snippet, articles)
